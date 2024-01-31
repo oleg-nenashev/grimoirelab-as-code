@@ -44,7 +44,8 @@ You can add organizations from your community to [settings/orgs_file.json](setti
 
 ## Wishlist
 
-- [ ] Nice2Have: Support for the application tokens. Now the menu is hardcoded.
+- [ ] Add Helm chart
+- [ ] Support for the GitHub application tokens. Now the menu is hardcoded.
 - [ ] Non-GitHub analytics OOTB
 - [ ] Actually consume the `menu.yaml` file
 - [ ] Include the NLP sentiment server to the setup to do comments/impressions
