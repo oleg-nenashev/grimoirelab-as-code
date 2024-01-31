@@ -1,8 +1,14 @@
-# WireMock Community Analytics
+# GrimoireLab as Code for GitHub Community Analytics
 
-WireMock community analytics setup, based on [GrimoireLab](https://chaoss.github.io/grimoirelab/)
+A portable GitHub community analytics setup,
+based on [GrimoireLab](https://chaoss.github.io/grimoirelab/)
 by CHAOSS.
 The project is distributed as Docker Compose, and can be reused as needed.
+
+> **NOTE:** The original project was developed for the
+> WireMock Community Analytics, and now it is being reworked to a portable project template that can be reused for your custom projects.
+> See [wiremock/wiremock-community-analytics](https://github.com/wiremock/wiremock-community-analytics)
+> for the original project.
 
 ## Configured analytics
 
