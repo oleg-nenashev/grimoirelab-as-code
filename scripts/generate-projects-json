@@ -11,24 +11,27 @@ function join_array {
   fi
 }
 
-readarray repositories < <(curl -L   \
+curl -L   \
     -H "Accept: application/vnd.github+json" \
     -H "X-GitHub-Api-Version: 2022-11-28" \
     -H "Authorization: Bearer $(cat settings/github-api-token.txt)" \
-    "https://api.github.com/orgs/wiremock/repos?type=sources&per_page=100" \
-    | jq --raw-output '.[].name')
+    "https://api.github.com/orgs/testcontainers/repos?type=sources&per_page=100" \
+    | jq --raw-output '.[].name' \
+    > settings/projects.lock
+
+while IFS=\= read repo; do
+    repositories+=($repo)
+done < settings/projects.lock
 
 if [ -n "${USE_TEST_DATA}" ]; then
-  repositories=("grpc-wiremock" "wiremock-testcontainers-java")
+  repositories=("testcontainers-go" "testcontainers-c")
 fi
-
-echo "${repositories[@]}" > settings/projects.lock
 
 repoUrls=()
 gitUrls=()
 for repo in "${repositories[@]}"
 do
-  repoUrl="https://github.com/wiremock/${repo//[$'\t\r\n ']/}"
+  repoUrl="https://github.com/testcontainers/${repo//[$'\t\r\n ']/}"
   repoUrls+="\"${repoUrl}\" "
   gitUrls+="\"${repoUrl}.git\" "
 done

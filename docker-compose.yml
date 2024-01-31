@@ -52,7 +52,7 @@ services:
 
     mordred:
       restart: always
-      image: wiremock/grimoirelab:latest
+      image: onenashev/grimoirelabascode:latest
       build:
         context: .
         dockerfile: grimoirelab.Dockerfile

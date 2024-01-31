@@ -1,7 +1,7 @@
 {
-  "wiremock": {
+  "mainproject": {
     "meta": {
-      "title": "WireMock"
+      "title": "GrimoireLab as Code"
     },
     "git": [
       ${GIT_REPOS}
