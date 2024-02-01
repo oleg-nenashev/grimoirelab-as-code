@@ -1,7 +1,7 @@
 {
-  "mainproject": {
+  "yourproject": {
     "meta": {
-      "title": "GrimoireLab as Code"
+      "title": "Your Project"
     },
     "git": [
       ${GIT_REPOS}
