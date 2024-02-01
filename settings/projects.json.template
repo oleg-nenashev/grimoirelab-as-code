@@ -1,7 +1,7 @@
 {
-  "yourproject": {
+  "testcontainers": {
     "meta": {
-      "title": "Your Project"
+      "title": "Testcontainers"
     },
     "git": [
       ${GIT_REPOS}
