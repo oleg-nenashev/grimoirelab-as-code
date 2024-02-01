@@ -44,7 +44,7 @@ You can add organizations from your community to [settings/orgs_file.json](setti
 
 ## Wishlist
 
-- [ ] Add Helm chart
+- [ ] Add Helm charts
 - [ ] Support for the GitHub application tokens. Now the menu is hardcoded.
 - [ ] Non-GitHub analytics OOTB
 - [ ] Actually consume the `menu.yaml` file
@@ -54,3 +54,8 @@ You can add organizations from your community to [settings/orgs_file.json](setti
 
 GNU GPL 3 is used as the repository adopts some code and configurations from
 GrimoireLab and its repositories
+
+## Learn More
+
+- Oleg Nenashev, GrimoireLab as Code. Ready-to-fly GitHub analytics, CHAOSScon 2024
+  ([Slides](https://speakerdeck.com/onenashev/grimoirelab-as-code))
