@@ -191,17 +191,17 @@ no-archive = true
 studies = [enrich_geolocation:user, enrich_geolocation:assignee]
 api-token = ${GITHUB_API_TOKEN}
 
-[stackexchange]
-raw_index = stackoverflow_raw
-enriched_index = stackoverflow_enriched
-api-token = ${STACKOVERFLOW_API_TOKEN}
-no-archive = true
-
-[slack]
-raw_index = slack_community_raw
-enriched_index = slack_community_enriched
-api-token = ${SLACK_API_TOKEN}
-no-archive = true
+#[stackexchange]
+#raw_index = stackoverflow_raw
+#enriched_index = stackoverflow_enriched
+#api-token = ${STACKOVERFLOW_API_TOKEN}
+#no-archive = true
+#
+#[slack]
+#raw_index = slack_community_raw
+#enriched_index = slack_community_enriched
+#api-token = ${SLACK_API_TOKEN}
+#no-archive = true
 
 #[twitter]
 #raw_index = twitter_demo_raw
